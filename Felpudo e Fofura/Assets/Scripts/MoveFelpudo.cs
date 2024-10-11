@@ -8,7 +8,8 @@ public class MoveFelpudo : MonoBehaviour
     public float spawnTime = 2f;
     public float spawnDelay = 2f;
 
-    public ParticleSystem particles;
+
+    public ControlGame genJ;
 
     bool canRun;
     // Use this for initialization
@@ -17,8 +18,9 @@ public class MoveFelpudo : MonoBehaviour
         canRun = true;
         moveSpeed = Vector3.right * Time.deltaTime;
         InvokeRepeating("ChangeSpeed", spawnDelay, spawnTime);
-        var emission = particles.emission;
-        emission.enabled = false;
+
+        genJ = GameObject.FindGameObjectWithTag("Controle").GetComponent<ControlGame>();
+
     }
     void ChangeSpeed()
     {
@@ -39,9 +41,10 @@ public class MoveFelpudo : MonoBehaviour
         {
             canRun = false;
             moveSpeed = Vector3.zero;
-            var emission = particles.emission;
-            emission.enabled = true;
+            genJ.Match();
         }
+       
+
     }
 }
 
