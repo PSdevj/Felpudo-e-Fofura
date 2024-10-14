@@ -40,13 +40,24 @@ public class ControlGame : MonoBehaviour
 
     public void SimMatch()
     {
-
         telaMatch.SetActive(false);
-        Time.timeScale = 1;
-        var emission = particles.emission;
-        emission.enabled = true;
+        ativadorParticulas();
+        
 
     }
 
+    public void NoMatch()
+    {
+        telaNoMatch.SetActive(true);
+        Time.timeScale = 0;
+
+    }
+    public void ativadorParticulas()
+    {
+        
+        telaMatch.SetActive(false);
+        var emission = particles.emission;
+        emission.enabled = true;
+    }
 
 }
