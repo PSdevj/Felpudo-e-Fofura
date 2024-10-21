@@ -41,7 +41,7 @@ public class MoveFelpudo : MonoBehaviour
         {
             canRun = false;
             moveSpeed = Vector3.zero;
-            genJ.Match();
+            
         }
        
 

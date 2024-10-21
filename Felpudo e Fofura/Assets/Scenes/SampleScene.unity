@@ -312,12 +312,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40300565}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.6, y: -2.68, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4155329, y: 1.3300002, z: 0}
+  m_LocalScale: {x: 0.029418258, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 600510309}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &140387283
 GameObject:
@@ -1145,7 +1145,8 @@ Transform:
   m_LocalPosition: {x: 0.05, y: -4.01, z: 0}
   m_LocalScale: {x: 13.596998, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 40300571}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &600510310
@@ -1638,6 +1639,7 @@ MonoBehaviour:
   moveSpeed: {x: 0, y: 0, z: 0}
   spawnTime: 2
   spawnDelay: 2
+  particles: {fileID: 1665175336}
 --- !u!1 &1072284748
 GameObject:
   m_ObjectHideFlags: 0
@@ -1949,7 +1951,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2fe520efe55380549b30a4dfb501dbc6, type: 2}
+  - {fileID: 2100000, guid: 7fddf9b1c24eb6248b3b5b14f80c51ce, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6966,7 +6968,6 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 287744088}
   - {fileID: 600510309}
-  - {fileID: 40300571}
   - {fileID: 1055049182}
   - {fileID: 272897277}
   - {fileID: 2118569835}
